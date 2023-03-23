@@ -1,0 +1,109 @@
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+
+.navbar--name {
+  font-family: $secondaryFontFamily;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.938;
+  text-decoration: none;
+}
+
+.name--first {
+  color: $companyColor;
+}
+
+.name--second {
+  color: $textColorBlack;
+}
+
+.navbar--pagelist {
+  display: inline-flex;
+  min-width: 254px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: auto;
+}
+
+.pagelist--item {
+  position: relative;
+  transition-property: border-bottom;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  padding-bottom: 20px;
+  &:hover {
+    color: $companyColor;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-bottom-color: $companyColor;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+  }
+}
+
+.active {
+  color: $companyColor;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom-color: $companyColor;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+
+.pagelist--link {
+  color: $textColorPrimary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition-property: text-shadow border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.navbar--contact {
+  justify-content: space-between;
+  display: inline-flex;
+  width: 325px;
+}
+
+.contact--link {
+  color: $textColorSecondary;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: inline-flex;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  &:hover,
+  &:focus {
+    color: $companyColor;
+  }
+}
+
+.contact--icon {
+  margin-right: 10px;
+  fill: $textColorSecondary;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  &:hover,
+  &:focus {
+    fill: $companyColor;
+  }
+}

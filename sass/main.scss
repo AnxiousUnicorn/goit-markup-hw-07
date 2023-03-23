@@ -1,0 +1,25 @@
+@import "utils/variables.scss";
+
+.body {
+  background-color: $backgroundPrimaryColor;
+  font-family: $primaryFontFamily;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding-top: 94px;
+}
+
+@import "components/navbar";
+@import "components/mainpage-header";
+@import "components/mainpage-solutions";
+@import "components/mainpage-whatwedo";
+@import "components/mainpage-team";
+@import "components/mainpage-clients";
+@import "components/mainpage-modal";
+@import "components/portfolio-categories";
+@import "components/portfolio-projects";
+@import "components/footer";
